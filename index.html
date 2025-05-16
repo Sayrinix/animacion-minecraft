@@ -10,23 +10,27 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
-
+        <div class="col-md-6 mt-3">
+            <a href="#" class="btn btn-primary" id="mover">Mover</a>
+            <a href="#" class="btn btn-secondary">Desaparecer</a>
+            <a href="#" class="btn btn-danger">Boom!</a>
+            <a href="#" class="btn btn-success" id="botonHablar">Hablar</a>
+            <audio src="assets/audio/i-am-steve-minecraft-movie.mp3" class="d-none" id="steve"></audio>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
             
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 position-relative" id="abeja">
             <img src="assets/img/minecraft-bee-512x512.png" alt="Abeja volando sobre árbol" width="80px" height="80px">
         </div>
         <div class="col-md-4">
             <div class="row">
-                <div class="col-md-6 mt-5">
-                    <img class="mt-5" src="assets/img/minecraft-baby-yoda-512x512.png" alt="Baby yoda arriba de un árbol" height="120px" width="150px">
-                </div>
                 <div class="col-md-6">
+                    <img class="mt-4" src="assets/img/minecraft-baby-yoda-512x512.png" alt="Baby yoda arriba de un árbol" height="120px" width="150px">
+                </div>
+                <div class="col-md-6 position-relative" id="pig">
                     <img class="margen3" src="assets/img/minecraft-pig-512x512.png" alt="Cerdito arriba de un árbol" width="200px" height="120px">
                 </div>
             </div>
@@ -35,10 +39,22 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <img src="assets/img/minecraft-tree-bees-512x512.png" alt="arbol de abejas de minecraft">
+            <img class="mt-5" src="assets/img/minecraft-tree-bees-512x512.png" alt="arbol de abejas de minecraft" width="400px" height="400px">
         </div>
-        <div class="col-md-4">
-            <img class="margen1" src="assets/img/minecraft-steve-lamb-512x512.png" alt="Steve acariciando oveja" width="300px" height="200px">
+        <div class="col-md-4 margen1" id="contenedor">
+            <div class="row">
+                <div class="col-md-6 oculto" id="comicSteve">
+                    <img src="assets/img/im-stevee.png" alt="Viñeta que dice Im steve">
+                </div>
+                <div class="col-md-6 oculto" id="comicOveja">
+                    <img src="assets/img/bee.png" alt="Viñeta que dice Bee, sonido de la oveja">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="mt-1 ms-5" src="assets/img/minecraft-steve-lamb-512x512.png" alt="Steve acariciando oveja" width="300px" height="200px">
+                </div>
+            </div>
         </div>
         <div class="col-md-4 margen2">
             <div class="row">
@@ -55,6 +71,11 @@
             
         </div>
     </div>
-</div>  
+</div>
+
+<!--Jquery Libreria -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!--Script JS -->
+<script src="assets/js/script.js"></script>
 </body>
 </html>
