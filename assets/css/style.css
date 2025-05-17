@@ -8,14 +8,15 @@ body{
     background-image: url(../img/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .margen1{
-    margin-top: 300px !important;
+    margin-top: 250px !important;
 }
 
 .margen2{
-    margin-top: 220px !important;
+    margin-top: 200px !important;
 }
 
 .margen3{
@@ -26,6 +27,10 @@ body{
     display: none;
 }
 
+.girar{
+    transform: rotate(360deg);
+    transition: transform 2s;
+}
 
 
 
